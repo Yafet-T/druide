@@ -17,15 +17,16 @@
 
 html {
   font-size: 16px;
+  @import "bootstrap/scss/bootstrap-grid";
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
   font-size: 1rem;
   line-height: 1.25;
+  padding: 20px 26px 20px 26px;
 }
 
 a {
@@ -39,6 +40,126 @@ video {
   vertical-align: middle;
 }
 
-/* ====================================
+/* ==========================================================================================================================================
 // base rules
-// ==================================== */
+// ========================================================================================================================================== */
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-family: Helvetica-Bold;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: start;
+}
+
+.link {
+  font-family: Helvetica;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.link-two {
+  font-family: Helvetica;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.col-sm-2.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 35px;
+  height: 12px;
+  position: fixed;
+}
+
+.cash {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button {
+  background: black;
+  border-radius: 58.13px;
+  transition: width 0.5s;
+  user-select: none;
+}
+
+.button-one {
+  height: 5px;
+  width: 14px;
+}
+
+.button-two {
+  height: 5px;
+  width: 20px;
+}
+
+.button-tree {
+  height: 5px;
+  width: 6px;
+}
+
+.button-four {
+  height: 5px;
+  width: 28px;
+}
+
+.button-two-hover {
+  height: 6px;
+  width: 5px;
+}
+
+.button-one-hover {
+  height: 5px;
+  width: 28px;
+}
+
+.button-tree-hover {
+  height: 5px;
+  width: 20px;
+}
+
+.button-four-hover {
+  height: 5px;
+  width: 14px;
+}
+
+@media (max-width: 992px) {
+  .espace {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .draw-glass {
+    display: none;
+  }
+}
