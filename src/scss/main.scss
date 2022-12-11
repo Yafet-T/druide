@@ -52,8 +52,9 @@ video {
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
 }
 
 header {
@@ -89,7 +90,7 @@ header h1 {
   justify-content: center;
   align-items: center;
 }
-
+/*
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -151,6 +152,7 @@ header h1 {
   height: 5px;
   width: 14px;
 }
+*/
 
 @media (max-width: 992px) {
   .espace {
@@ -162,4 +164,77 @@ header h1 {
   .draw-glass {
     display: none;
   }
+}
+
+.header h1 {
+  font-family: Helvetica-Bold;
+  font-size: 140px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 152px;
+}
+
+@media (max-width: 992px) {
+  .header h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+}
+
+.no-gutter {
+  padding: 0 !important;
+}
+
+.grey {
+  background-color: #d8d8d8;
+}
+
+.presentation h4 {
+  font-family: Helvetica-Bold;
+  font-size: 71px;
+  letter-spacing: 0;
+  line-height: 78px;
+  margin-bottom: 30px;
+}
+
+.presentation p {
+  font-family: Helvetica-Light;
+  font-size: 25px;
+  letter-spacing: 0;
+}
+
+.presentation-one {
+  padding: 34px !important;
+}
+
+.presentation img {
+  display: block;
+  margin: auto;
+}
+
+.tastes img {
+  transform: scale(2);
+}
+
+.place h4 {
+  font-family: Helvetica-Bold;
+  font-size: 71px;
+  letter-spacing: 0;
+  line-height: 78px;
+  margin-bottom: 30px;
+}
+
+.place-one {
+  padding: 34px;
+}
+
+h3 {
+  font-family: Helvetica-Light;
+  font-size: 24px;
+  letter-spacing: 0;
+  font-weight: 100;
+}
+
+.blue {
+  background-color: #b0f1ff;
 }
