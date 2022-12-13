@@ -181,6 +181,17 @@ header h1 {
   }
 }
 
+@media (min-width: 992px) {
+  .header h1 {
+    padding: 42px 0 42px 0;
+  }
+}
+
+.title-header {
+  padding: 10px !important;
+  padding-bottom: 0px !important;
+}
+
 .no-gutter {
   padding: 0 !important;
 }
@@ -193,8 +204,7 @@ header h1 {
   font-family: Helvetica-Bold;
   font-size: 71px;
   letter-spacing: 0;
-  line-height: 78px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .presentation p {
@@ -203,8 +213,22 @@ header h1 {
   letter-spacing: 0;
 }
 
-.presentation-one {
-  padding: 34px !important;
+@media (max-width: 800px) {
+  .presentation-one h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .presentation-one h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .presentation-one p {
+    font-size: 14px;
+  }
 }
 
 .presentation img {
@@ -237,4 +261,106 @@ h3 {
 
 .blue {
   background-color: #b0f1ff;
+}
+
+.header-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+h3 {
+}
+
+@media (max-width: 500px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
+.img-chevalier {
+  padding: 0 !important;
+}
+
+.img-chevalier img {
+  margin: auto;
+}
+
+.newsletter p {
+  font-family: Helvetica;
+  font-size: 21px;
+  color: #000000;
+  letter-spacing: 0;
+  margin-bottom: 85px;
+}
+
+.blue {
+  padding: 34px !important;
+}
+
+.newsletter h5 {
+  font-family: Helvetica;
+  font-size: 23px;
+  color: #5a8088;
+  letter-spacing: 0;
+  margin-right: 245px;
+}
+
+.news-letter-button {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid black;
+  justify-content: space-between;
+}
+
+@media (max-width: 460px) {
+  .newsletter p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .newsletter h5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .place h4 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+  }
+  .place br {
+    display: none;
+  }
+  .place img {
+    display: none;
+  }
+}
+
+.title-product p {
+  font-family: Helvetica-Bold;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.name-product p {
+  font-family: Helvetica;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.info-product p {
+  font-family: Helvetica-Light;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.info-product p,
+.name-product p {
+  display: flex;
+  flex-direction: row;
 }
