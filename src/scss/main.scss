@@ -249,7 +249,13 @@ header h1 {
 }
 
 .place-one {
-  padding: 34px;
+  padding: 34px !important;
+}
+
+@media (max-width: 800px) {
+  .place-one {
+    padding: 0px !important;
+  }
 }
 
 h3 {
@@ -259,16 +265,9 @@ h3 {
   font-weight: 100;
 }
 
-.blue {
-  background-color: #b0f1ff;
-}
-
 .header-img {
   height: 100%;
   object-fit: cover;
-}
-
-h3 {
 }
 
 @media (max-width: 500px) {
@@ -295,14 +294,21 @@ h3 {
 
 .blue {
   padding: 34px !important;
+  background-color: #b0f1ff;
 }
 
-.newsletter h5 {
+@media (max-width: 495px) {
+  .blue {
+    padding: 22px 19px 16px 19px !important;
+  }
+}
+
+.newsletter span {
   font-family: Helvetica;
   font-size: 23px;
   color: #5a8088;
   letter-spacing: 0;
-  margin-right: 245px;
+  margin-right: 24px;
 }
 
 .news-letter-button {
@@ -313,13 +319,19 @@ h3 {
 }
 
 @media (max-width: 460px) {
-  .newsletter p {
-    font-size: 16px;
+  .news-letter-button img {
   }
 }
 
-@media (min-width: 768px) {
-  .newsletter h5 {
+@media (max-width: 460px) {
+  .newsletter p {
+    font-size: 16px;
+    margin-bottom: 39px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter span {
     font-size: 20px;
   }
 }
@@ -330,10 +342,8 @@ h3 {
     text-align: center;
     margin: 0;
   }
+
   .place br {
-    display: none;
-  }
-  .place img {
     display: none;
   }
 }
@@ -363,4 +373,86 @@ h3 {
 .name-product p {
   display: flex;
   flex-direction: row;
+}
+
+.place-img {
+  padding: none !important;
+}
+
+.header-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-right .row {
+  flex-grow: 1;
+}
+
+@media (min-width: 700px) {
+  .img-supermarche {
+    display: none;
+  }
+}
+
+.footer-links a {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: black;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+@media (max-width: 440px) {
+  .footer-links a {
+    font-size: 11px;
+  }
+}
+
+.footer-link {
+  padding: 20px !important;
+}
+
+@media (min-width: 768px) {
+  .footer-links ul {
+    margin-right: 174px !important;
+  }
+}
+
+ul li {
+  list-style-type: none;
+  margin-top: 11px;
+}
+
+ul {
+  margin-right: 43;
+}
+
+.footer-link {
+  flex-direction: row;
+  display: flex;
+}
+
+.lign-arrow {
+  border: solid black;
+  border-width: 0px 0px 5px 0px;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+  left: 25px;
+}
+
+.arrow-right {
+  border: solid black;
+  border-width: 0 5px 5px 0px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
