@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
+    <div class="stars"><img src="img/stars.svg" alt="" /></div>
+    <div class="menu-overlay">
+      <div class="menu-overlay-close">close</div>
+    </div>
     <script src="js/main.js" type="module"></script>
     <header>
       <div class="bar container">
         <div class="row">
-          <div class="col-8 col-lg-2">
+          <div class="col-6 col-lg-2">
             <h1>Druide.</h1>
           </div>
           <div class="col-7 col-lg-8 espace"></div>
-          <div class="col-2 col-lg-1 link-two">Shop</div>
-          <div class="col-2 col-lg-1 burger">
-            <!-- <div class="menu">
-            <div class="button button-one"></div>
-            <div class="button button-two"></div>
-            <div class="button button-tree"></div>
-            <div class="button button-four"></div>
-          </d>
-          <div class="menu cash"></div>-->
+          <div class="col-3 col-lg-1 link-two">Shop</div>
+          <div class="col-3 col-lg-1 burger">
+            <div class="menu">
+              <div class="button button-one"></div>
+              <div class="button button-two"></div>
+              <div class="button button-tree"></div>
+              <div class="button button-four"></div>
+              <div class="menu cash"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -54,7 +58,9 @@
       </div>
       <div class="container presentation">
         <div class="row">
-          <div class="col-4 col-lg-2"><h3>Presentation</h3></div>
+          <div class="col-4 col-lg-2">
+            <h3 class="h3-left">Presentation</h3>
+          </div>
           <div class="col-2 col-lg-2 grey"></div>
           <div class="col-6 col-lg-8"></div>
           <div class="col-9 col-lg-7 presentation-one">
@@ -74,7 +80,7 @@
         <div class="row">
           <div class="col-4 col-lg-8"></div>
           <div class="col-2 col-lg-2 grey"></div>
-          <div class="col-6 col-lg-2"><h3>Products</h3></div>
+          <div class="col-6 col-lg-2"><h3 class="h3-right">Products</h3></div>
           <div class="col-12 col-lg-4">
             <img src="img/bouteille.jpg" alt="" />
             <div class="title-product"><p>Druide.</p></div>
@@ -97,7 +103,7 @@
       </div>
       <div class="container place">
         <div class="row">
-          <div class="col-4 col-lg-2"><h3>Place</h3></div>
+          <div class="col-4 col-lg-2"><h3 class="h3-left">Place</h3></div>
           <div class="col-2 col-lg-2 grey"></div>
           <div class="col-6 col-lg-8"></div>
         </div>
@@ -105,14 +111,19 @@
       <div class="container place">
         <div class="row">
           <div class="col-12 col-lg-7 place-one">
-            <h4>
-              Where to <br />
-              find us
-            </h4>
+            <h4>Where to find us</h4>
             <img class="img-supermarche" src="img/place.svg" alt="" />
           </div>
           <div class="col-12 col-lg-5 place-img">
-            <img src="img/rer.webp" alt="" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222914.4188830323!2d-74.0384321029195!3d40.70603538877951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue%20de%20la%20Libert%C3%A9!5e0!3m2!1sfr!2sch!4v1671404051351!5m2!1sfr!2sch"
+              width="900"
+              height="710"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -122,7 +133,7 @@
         <div class="row">
           <div class="col-4 col-lg-8"></div>
           <div class="col-2 col-lg-2 grey"></div>
-          <div class="col-6 col-lg-2"><h3>Newsletter</h3></div>
+          <div class="col-6 col-lg-2"><h3 class="h3-right">Newsletter</h3></div>
           <div class="col-12 col-lg-8 blue">
             <p>
               Sign up below and receive updates from Druid, including collection
@@ -140,26 +151,34 @@
           </div>
         </div>
       </div>
-      <div class="container footer-links"> 
+      <div class="container footer-links">
         <div class="row">
-           <div class="col-12 col-lg-12 footer-link">
-             <ul>
-               <li><a href="">HELP</a></li>
-               <li><a href="">FAG</a></li>
-               <li><a href="">STORE</a></li>
-               <li><a href="">SHIPPING</a></li>
-               <li><a href="">RETURNS</a></li>
-             </ul>
-             <ul>      
-               <li><a href="">TERMS & CONDITIONS</a></li>
-               <li><a href="">PRIVACY POLICY</a></li>
-               <li><a href="">COOKIES</a></li>
-           </div>
+          <div class="col-12 col-lg-12 footer-link">
+            <ul>
+              <li><a href="">HELP</a></li>
+              <li><a href="">FAG</a></li>
+              <li><a href="">STORE</a></li>
+              <li><a href="">SHIPPING</a></li>
+              <li><a href="">RETURNS</a></li>
+            </ul>
+            <ul>
+              <li><a href="">TERMS & CONDITIONS</a></li>
+              <li><a href="">PRIVACY POLICY</a></li>
+              <li><a href="">COOKIES</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="container social-link">
         <div class="row">
-          <div class="col-12 col-lg-12"></div>
+          <div class="col-12 col-lg-12">
+            <div class="info-credit">© 2022 Druide.</div>
+            <div class="rrr">
+              <img src="img/twitter-logo.svg" alt="" />
+              <img src="img/linkedin-logo.svg" alt="" />
+              <img src="img/instagram-logo.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
