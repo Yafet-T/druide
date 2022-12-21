@@ -92,17 +92,13 @@ header h1 {
 /*-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------*/
 
-.menu.is-open {
-  opacity: 0;
-}
-
 .menu-overlay {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 10;
   pointer-events: none;
-  transition: all 1s;
+  transition: all 1s 1s;
   width: 0px;
   height: 0px;
   border-radius: 1000px 0px 1000px 1000px;
@@ -116,84 +112,14 @@ header h1 {
   }
 }
 
-.menu-overlay-close {
-  position: absolute;
-  top: 20%;
-  right: 20%;
-}
-
-// .cash {
-//   position: fixed;
-//   right: 0;
-//   top: 0;
-// }
-
-// .menu {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   width: 35px;
-//   height: 12px;
-//   position: relative;
-//   margin: auto;
-//   opacity: 1;
-// }
-
-// .button {
-//   background: black;
-//   border-radius: 60px;
-//   transition: width 0.5s;
-//   user-select: none;
-// }
-
-// .button-one {
-//   height: 5px;
-//   width: 14px;
-// }
-
-// .button-two {
-//   height: 5px;
-//   width: 20px;
-// }
-
-// .button-tree {
-//   height: 5px;
-//   width: 6px;
-// }
-
-// .button-four {
-//   height: 5px;
-//   width: 28px;
-// }
-
-// .button-one-hover {
-//   height: 5px;
-//   width: 28px;
-// }
-
-// .button-two-hover {
-//   height: 6px;
-//   width: 5px;
-// }
-
-// .button-tree-hover {
-//   height: 5px;
-//   width: 20px;
-// }
-
-// .button-four-hover {
-//   height: 5px;
-//   width: 14px;
-// }
-
 .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-item: space-between;
+  align-items: space-between;
   width: 35px;
   height: 12px;
-  position: fixed;
+  margin: auto;
 }
 
 .button {
@@ -277,15 +203,6 @@ header h1 {
   top: 0;
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 35px;
-  height: 12px;
-  margin: auto;
-  opacity: 1;
-}
 /*-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------*/
 
@@ -693,6 +610,7 @@ ul {
   display: flex;
   justify-content: start;
   align-items: center;
+  border-bottom: solid 2px rgb(0, 0, 0);
 }
 
 .lign-arrow {
@@ -751,8 +669,6 @@ ul {
   margin-left: 10px;
 }
 
-.stars {
-  position: absolute;
-  top: 140%;
-  left: 20%;
+.container {
+  border-right: solid 2px rgb(0, 0, 0);
 }

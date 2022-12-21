@@ -1,18 +1,3 @@
-// var menuOverlay = document.querySelector(".menu-overlay");
-// var menu = document.querySelector(".menu");
-// var close = document.querySelector(".menu-overlay-close");
-
-// var openMenu = function () {
-//   menuOverlay.classList.toggle("is-active");
-//   menu.classList.toggle("is-open");
-// };
-
-// menu.addEventListener("click", openMenu);
-
-// close.addEventListener("click", openMenu);
-
-// -----------
-
 var menu = document.querySelector(".menu");
 var buttonOne = document.querySelector(".button-one");
 var buttonTwo = document.querySelector(".button-two");
