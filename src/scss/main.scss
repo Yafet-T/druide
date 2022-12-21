@@ -26,7 +26,7 @@ body {
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.25;
-  padding: 20px 26px 20px 26px;
+  padding: 20px 26px;
 }
 
 a {
@@ -54,7 +54,6 @@ video {
   padding-bottom: 12px;
   border-top: 2px solid rgb(0, 0, 0);
   border-left: 2px solid rgb(0, 0, 0);
-  border-right: 2px solid rgb(0, 0, 0);
 }
 
 header {
@@ -92,16 +91,6 @@ header h1 {
 }
 /*-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------*/
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 35px;
-  height: 12px;
-  position: relative;
-  margin: auto;
-  opacity: 1;
-}
 
 .menu.is-open {
   opacity: 0;
@@ -122,21 +111,89 @@ header h1 {
     pointer-events: all;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     border-radius: 0;
   }
 }
 
 .menu-overlay-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 20%;
+  right: 20%;
 }
 
-.cash {
-  position: absolute;
-  left: 0;
-  top: 0;
+// .cash {
+//   position: fixed;
+//   right: 0;
+//   top: 0;
+// }
+
+// .menu {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   width: 35px;
+//   height: 12px;
+//   position: relative;
+//   margin: auto;
+//   opacity: 1;
+// }
+
+// .button {
+//   background: black;
+//   border-radius: 60px;
+//   transition: width 0.5s;
+//   user-select: none;
+// }
+
+// .button-one {
+//   height: 5px;
+//   width: 14px;
+// }
+
+// .button-two {
+//   height: 5px;
+//   width: 20px;
+// }
+
+// .button-tree {
+//   height: 5px;
+//   width: 6px;
+// }
+
+// .button-four {
+//   height: 5px;
+//   width: 28px;
+// }
+
+// .button-one-hover {
+//   height: 5px;
+//   width: 28px;
+// }
+
+// .button-two-hover {
+//   height: 6px;
+//   width: 5px;
+// }
+
+// .button-tree-hover {
+//   height: 5px;
+//   width: 20px;
+// }
+
+// .button-four-hover {
+//   height: 5px;
+//   width: 14px;
+// }
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-item: space-between;
+  width: 35px;
+  height: 12px;
+  position: fixed;
 }
 
 .button {
@@ -149,6 +206,7 @@ header h1 {
 .button-one {
   height: 5px;
   width: 14px;
+  margin-bottom: 2px;
 }
 
 .button-two {
@@ -166,24 +224,67 @@ header h1 {
   width: 28px;
 }
 
-.button-two-hover {
-  height: 6px;
+.button-two-act {
+  height: 5px;
   width: 5px;
 }
 
-.button-one-hover {
+.button-one-act {
   height: 5px;
   width: 28px;
 }
 
-.button-tree-hover {
+.button-tree-act {
   height: 5px;
   width: 20px;
 }
 
-.button-four-hover {
+.button-four-act {
   height: 5px;
   width: 14px;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
+  transition: all 1s;
+  width: 0px;
+  height: 0px;
+  border-radius: 1000px 0px 1000px 1000px;
+  overflow: hidden;
+
+  &.is-active {
+    pointer-events: all;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    border-radius: 0;
+  }
+}
+
+.menu-overlay-close {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+.cash {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 35px;
+  height: 12px;
+  margin: auto;
+  opacity: 1;
 }
 /*-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------*/
@@ -206,18 +307,48 @@ header h1 {
   color: #000000;
   letter-spacing: 0;
   line-height: 152px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .header h1 {
+    font-size: 90px;
+    line-height: 80px;
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width: 992px) {
   .header h1 {
-    font-size: 45px;
-    line-height: 52px;
+    padding: 0px 0 20px 0;
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
   .header h1 {
-    padding: 42px 0 42px 0;
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 590px) {
+  .header h1 {
+    font-size: 60px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 464px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 464px) {
+  .header h1 {
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
@@ -358,9 +489,16 @@ header h1 {
   padding: 34px !important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 991px) {
   .place-one {
-    padding: 0px !important;
+    padding: 8px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .place-one h4 {
+    margin: 0px;
+    text-align: center;
   }
 }
 
@@ -464,7 +602,7 @@ h3 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 991px) {
   .img-supermarche {
     display: none;
   }
@@ -550,6 +688,13 @@ ul {
   display: flex;
 }
 
+.social-link-flex {
+  flex-direction: row;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .lign-arrow {
   border: solid black;
   border-width: 0 0 5px 0;
@@ -594,17 +739,15 @@ ul {
   font-family: Helvetica-Light;
   font-size: 10px;
   letter-spacing: 0;
-  display: inline;
   display: flex;
 }
 
-.rrr {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.logo-social {
+  position: sticky;
+  left: 10000px;
 }
 
-.rrr img {
+.logo-social img {
   margin-left: 10px;
 }
 
