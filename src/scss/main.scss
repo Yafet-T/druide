@@ -648,11 +648,35 @@ ul li {
   background-color: #ffffff;
 }
 
-.vanilla {
-  transition: all 0.2s ease-in-out;
+.vanilla:hover {
+  border-left: 2px solid black !important;
+  background: rgb(255, 239, 2);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 239, 2, 1) 0%,
+    rgba(255, 244, 75, 1) 39%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
-.vanilla :hover {
-  transform: scale(1.1);
+
+.cbd:hover {
+  background: rgb(81, 255, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(81, 255, 0, 1) 0%,
+    rgba(214, 244, 200, 1) 39%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.cherry:hover {
+  background: rgb(255, 0, 84);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 84, 1) 0%,
+    rgba(255, 176, 202, 1) 39%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .news-letter-button img {
@@ -703,6 +727,12 @@ button-haut
 
 /*--------------------------------------*/
 /*--------------------------------------*/
+
+@media (max-width: 440px) {
+  .button-move {
+    width: 80px;
+  }
+}
 
 .arrow-right {
   border: solid black;
