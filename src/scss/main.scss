@@ -18,6 +18,7 @@
 html {
   font-size: 16px;
   @import "bootstrap/scss/bootstrap-grid";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -186,7 +187,7 @@ header h1 {
     pointer-events: all;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border-radius: 0;
   }
 }
@@ -225,6 +226,14 @@ header h1 {
   letter-spacing: 0;
   line-height: 152px;
   margin-bottom: 50px;
+}
+
+@media (min-width: 1199px) {
+  .header h1 {
+    font-size: 200px;
+    line-height: 200px;
+    margin-bottom: 150px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -489,11 +498,6 @@ h3 {
   justify-content: space-between;
 }
 
-.news-letter-button img {
-  flex-grow: 1;
-  display: flex;
-}
-
 .img-supermarche {
   width: 500px;
 }
@@ -591,15 +595,6 @@ h3 {
   }
 }
 
-ul li {
-  list-style-type: none;
-  margin-top: 11px;
-}
-
-ul {
-  margin-right: 43;
-}
-
 .footer-link {
   flex-direction: row;
   display: flex;
@@ -611,46 +606,6 @@ ul {
   justify-content: start;
   align-items: center;
   border-bottom: solid 2px rgb(0, 0, 0);
-}
-
-.lign-arrow {
-  border: solid black;
-  border-width: 0 0 5px 0;
-  display: inline-block;
-  width: 300px;
-  animation: arrow-one 3s infinite alternate-reverse;
-  transform-origin: left 100%;
-  margin-bottom: 11px;
-  margin-left: 230px;
-}
-
-.arrow-right {
-  border: solid black;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  position: sticky;
-  top: 10px;
-  left: 0px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-@keyframes arrow-one {
-  from {
-    width: 30px;
-  }
-
-  to {
-    width: 50px;
-  }
-}
-
-@media (min-width: 768px) {
-  .lign-arrow {
-    margin-right: 0;
-  }
 }
 
 .info-credit {
@@ -671,4 +626,130 @@ ul {
 
 .container {
   border-right: solid 2px rgb(0, 0, 0);
+}
+
+.ulu {
+  font-family: Helvetica;
+  font-size: 100px;
+  color: grey;
+  transition: opacity 0.4s ease-in-out;
+  transform: translate(0px, 0%);
+  border: 4px 4px solid rgb(0, 0, 0);
+  list-style-type: none;
+  padding: 25px 0px 25px 50px !important;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.ulu:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+
+.vanilla {
+  transition: all 0.2s ease-in-out;
+}
+.vanilla :hover {
+  transform: scale(1.1);
+}
+
+.news-letter-button img {
+  height: 20px;
+}
+
+@media (max-width: 440px) {
+  .news-letter-button img {
+    display: none;
+  }
+}
+
+/*-------------------------------------------------------------------------------------------
+button-haut
+-------------------------------------------------------------------------------------------*/
+
+.cercle {
+  width: 90px;
+  height: 110px;
+  border-radius: 64px;
+  background: white;
+  border: 5px solid #000000;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cercle-active {
+  width: 90px;
+  height: 160px;
+  border-radius: 64px;
+  background: white;
+  border: 5px solid #000000;
+  background: #ffffff;
+  align-items: start;
+  justify-content: center;
+  transition: all 1s 0s;
+}
+
+.button-move {
+  z-index: 1;
+  transition: height 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+.arrow-right {
+  border: solid black;
+  border-width: 5px 5px 0px 0px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  transform: rotate(-45deg);
+  display: inline-block;
+}
+
+.arrow-active {
+  border: solid black;
+  border-width: 5px 5px 0px 0px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  transform: rotate(-45deg);
+  display: inline-block;
+  margin-top: 30px;
+  transition: all 1s 0s;
+}
+
+.ligne-arrow {
+  border-left: 5px solid black;
+  text-align: center;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  left: -12px;
+}
+
+.ligne-arrow-active {
+  border-left: 5px solid black;
+  text-align: center;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: -12px;
+  margin-top: 30px;
+  transition: all 1s 0s;
+}
+
+.button-move {
+  position: fixed;
+  top: 75%;
+  right: 15%;
 }

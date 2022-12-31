@@ -8,15 +8,23 @@
   </head>
   <body>
     <script src="js/main.js" type="module"></script>
-    <div class="menu-overlay"></div>
+    <div class="menu-overlay">
+      <div class="row">
+        <div class="col-12 col-lg-12 ulu">Work</div>
+        <div class="col-12 col-lg-12 ulu">Services</div>
+        <div class="col-12 col-lg-12 ulu">Collection</div>
+        <div class="col-12 col-lg-12 ulu">About</div>
+        <div class="col-12 col-lg-12 ulu">Contact</div>
+    </div>
+  </div>
     <header>
-      <div class="bar container">
+      <div id="haut" class="bar container">
         <div class="row">
           <div class="col-6 col-lg-2">
             <h1>Druide.</h1>
           </div>
           <div class="col-7 col-lg-8 espace"></div>
-          <div class="col-3 col-lg-1 link-two">Shop</div>
+          <div class="col-3 col-lg-1 link-two"><a href="#shop">Shop</a></div>
           <div class="col-3 col-lg-1 burger">
             <div class="menu fermer-menu">
               <div class="button button-one"></div>
@@ -76,12 +84,12 @@
           </div>
         </div>
       </div>
-      <div class="container product">
+      <div id="shop" class="container product">
         <div class="row">
           <div class="col-4 col-lg-8"></div>
           <div class="col-2 col-lg-2 grey"></div>
           <div class="col-6 col-lg-2"><h3 class="h3-right">Products</h3></div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 vanilla">
             <img src="img/bouteille.jpg" alt="" />
             <div class="title-product"><p>Druide.</p></div>
             <div class="name-product"><p>vanilla</p></div>
@@ -127,6 +135,12 @@
           </div>
         </div>
       </div>
+      <a class="button-move" href="#haut">
+        <div class="cercle">
+          <div class="arrow-right"></div> 
+          <div class="ligne-arrow"></div>
+        </div>
+      </a>
     </main>
     <footer>
       <div class="container newsletter">
@@ -142,8 +156,7 @@
             </p>
             <div class="news-letter-button">
               <span>Enter your email address</span>
-              <div class="lign-arrow"></div>
-              <i class="arrow-right"></i>
+              <img src="img/news-letter-arrow.svg" alt="">
             </div>
           </div>
           <div class="col-12 col-lg-4">
